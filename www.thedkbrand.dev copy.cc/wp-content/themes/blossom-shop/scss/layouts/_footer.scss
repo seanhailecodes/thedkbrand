@@ -1,0 +1,191 @@
+.site-footer {
+	background: rgba($black_color, 0.015);
+
+	.footer-t, .footer-top {
+		padding-top: 60px;
+		padding-bottom: 0;
+	}//.footer-t
+
+	.grid {
+		
+		&:not(.column-1) {
+			display: flex;
+			flex: 1;
+			flex-wrap: wrap;
+
+			.col {
+				margin-right: 3%;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}//.col
+		}//&:not(.column-1)
+
+		&.column-4 {
+
+			.col {
+				width: 22.66%;
+			}
+		}//&.column-4
+
+		&.column-3 {
+			
+			.col {
+				width: 31.33%;
+			}
+		}//&.column-3
+
+		&.column-2 {
+			
+			.col {
+				width: 48%;
+			}
+		}//&.column-2
+	}//.grid
+
+	.widget-title {
+		margin-top: 0;
+		font-size: 0.7em;
+		font-weight: 700;
+		letter-spacing: 1px;
+		margin-bottom: 20px;
+	}//.widget-title
+
+	.footer-b {
+		border-top: 1px solid rgba(134, 142, 150, 0.1);
+		padding: 25px 0;
+
+		.container {
+			display: flex;
+			flex: 1;
+			flex-wrap: wrap;
+			align-items: center;
+		}//.container
+
+		.site-info {
+			width: 70%;
+			font-size: 0.75em;
+		}//.site-info
+
+		.copyright, .author-link, .wp-link {
+			color: #202020;
+
+			a {
+				color: #202020;
+
+				&:hover {
+					color: #868e96;
+					text-decoration: underline;
+				}
+			}
+		}//.copyright
+
+		.payment-method {
+			width: 30%;
+			text-align: right;
+		}//.payment-method
+	}//.footer-b
+}//.site-footer
+
+@include media(md) {
+	.site-footer {
+		
+		.grid {
+
+			&.column-4 {
+				.col {
+					width: 31.33%;
+
+					&:nth-child(3n) {
+						margin-right: 0;
+					}
+
+				}
+
+			}//&.column-3
+
+	    }//.grid
+
+	}//.site-footer
+
+}//media(md)
+
+@include media(sm) {
+	.site-footer {
+		
+		.grid {
+
+			&.column-4 {
+
+				.col {
+
+					&:nth-child(3n) {
+						margin-right: 3%;
+					}
+				}
+			}
+
+			&.column-4, &.column-3 {
+
+				.col {
+					width: 48%;
+
+					&:nth-child(2n) {
+						margin-right: 0;
+					}
+
+				}
+
+			}//&.column-3
+
+	    }//.grid
+
+		.footer-b {
+			
+			.container {
+				flex-direction: column;
+				text-align: center;
+			}//.container
+
+			.site-info, .payment-method {
+				width: 100%;
+			}
+
+			.payment-method {
+				margin-top: 15px;
+				justify-content: center;
+			}
+
+		}//.footer-b
+
+	}//.site-footer
+
+}//media(sm)
+
+@include media(xs) {
+	.site-footer {
+		
+		.grid {
+				
+			&:not(.column-1) {
+				flex-direction: column;
+
+				.col {
+					margin-right: 0;
+				}
+			}//&:not(.column-1)
+
+			&.column-4, &.column-3, &.column-2 {
+
+				.col {
+					width: 100%;
+				}
+
+			}//&.column-3
+
+	    }//.grid
+
+	}//.site-footer
+	
+}//@include media(xs)

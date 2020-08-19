@@ -1,0 +1,274 @@
+.sticky-t-bar {
+
+	.sticky-bar-content {
+		background: $primary_color;
+		text-align: center;
+		padding: 15px 0;
+		font-size: 0.7em;
+		line-height: 1.5em;
+
+		.container {
+			padding-right: 100px;
+		}
+
+		.btn-readmore {
+			display: inline-block;
+			text-transform: uppercase;
+			color: #202020;
+			position: relative;
+			margin-left: 5px;
+
+			&:after {
+				content: "";
+				background: #202020;
+				height: 1px;
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				@include transition(all ease 0.35s);
+			}
+
+			&:hover:after {
+				width: 50%;
+			}
+		}//.btn-readmore
+
+		.blossomthemes-email-newsletter-wrapper {
+			padding: 0;
+			background: none !important;
+
+			&::before {
+				display: none;
+			}
+
+			.newsletter-inner-wrapper {
+				display: flex;
+				flex: 1;
+				align-items: center;
+				justify-content: center;
+			}//.newsletter-inner-wrapper
+
+			.text-holder {
+				margin-bottom: 0;
+				display: flex;
+				flex-direction: column;
+				text-align: left;
+				flex: inherit;
+				padding-right: 15px;
+
+				h3 {
+					margin-bottom: 0;
+				}//h3
+
+				span {
+					font-size: 1em;
+					margin-bottom: 0;
+					margin-top: 5px;
+					color: $font_color;
+				}//span
+
+			}//.text-holder
+
+			form {
+				display: flex;
+				flex: 2;
+				align-items: center;
+				flex-wrap: wrap;
+
+				input {
+					width: auto;
+					margin-left: 1%;
+					display: flex;
+					flex: 2;
+					text-align: left;
+					margin-top: 5px;
+					margin-bottom: 5px;
+					font-size: 1em;
+					border: none;
+					background: rgba($white_color, 0.5);
+
+					&[type="submit"] {
+						flex: initial;
+						// padding-left: 10px;
+						// padding-right: 10px;
+						min-height: 50px;
+						text-align: center;
+						background: $black_color;
+
+						&:hover, &:active, &:focus {
+							background: $secondary_color;
+							color: $white_color;
+						}
+					}//&[type="submit"]
+
+				}//input
+
+				label {
+					margin-top: 5px;
+					order: 5;
+					width: 100%;
+					display: flex;
+					flex: auto;
+
+					.subscribe-inner-wrap {
+						margin-bottom: 0;
+						margin-left: 1%;
+						font-size: 1em;
+						color: $font_color;
+					}//.subscribe-inner-wrap
+
+				}//label
+
+			}//form
+
+		}//.blossomthemes-email-newsletter-wrapper
+
+	}//.sticky-bar-content
+
+	.close {
+		padding: 0;
+		display: block;
+		@extend %close-shared;
+		width: 20px;
+		height: 20px;
+		background: rgba($black_color, 0.3);
+		top: 15px;
+		right: 0;
+		@include transition(none);
+
+		&:hover {
+			background: rgba($black_color, 0.5);
+		}
+
+		&:before, &:after {
+			background: $white_color;
+			width: 12px;
+		}
+	}//.close
+
+	&:not(.active) {
+		
+		.close {
+			top: 0;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+
+			&:before {
+				width: 8px;
+				top: -2px;
+				left: -4px;
+			}
+
+			&:after {
+				width: 8px;
+				top: -2px;
+				right: -4px;
+			}
+		}//.close
+	}//&:not(.active)
+}//.sticky-t-bar
+
+.admin-bar {
+
+	.sticky-t-bar {
+
+		.close {
+			top: 46px;
+		}//.close
+
+		&:not(.active) {
+
+			.close {
+				top: 32px;
+			}
+
+		}
+
+	}//.sticky-t-bar
+
+}//.admin-bar
+
+@include media(sm) {
+
+	.sticky-t-bar {
+
+		.sticky-bar-content {
+
+			.blossomthemes-email-newsletter-wrapper {
+
+				.newsletter-inner-wrapper {
+					flex-direction: column;
+				}//.newsletter-inner-wrapper
+
+				.text-holder {
+					text-align: center;
+					margin-bottom: 15px;
+					padding-right: 0;
+				}//.text-holder
+
+				form {
+
+					label {
+						justify-content: center;
+					}//label
+
+				}//form
+
+			}//.blossomthemes-email-newsletter-wrapper
+
+		}//.sticky-bar-content
+
+	}//.sticky-t-bar
+
+}//media(sm)
+
+@include media(xs) {
+	.sticky-t-bar {
+		
+		.sticky-bar-content {
+			padding-top: 30px;
+
+			.container {
+				padding-right: 15px;
+			}//.container
+
+			.blossomthemes-email-newsletter-wrapper {
+
+				form {
+					flex-direction: column;
+					width: 100%;
+
+					input {
+						width: 100%;
+						margin-left: 0;
+						flex: auto;
+					}//input
+
+					label {
+						width: 100%;
+
+						.subscribe-inner-wrap {
+							margin-left: 0;
+						}//.subscribe-inner-wrap
+
+					}//label
+
+				}//form
+
+			}//.blossomthemes-email-newsletter-wrapper
+
+		}//.sticky-bar-content
+
+		.close {
+			margin: 0 auto;
+			left: 0;
+			right: 0 !important;
+			top: 0;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}//.close
+	}//.sticky-t-bar
+}//media(xs)

@@ -1,0 +1,31 @@
+[19/May/2020:06:52:37] (ℹ️): WordPress Instance Info:
+[19/May/2020:06:52:37] (ℹ️): Home URL : http://www.dikoyl.dev.cc
+[19/May/2020:06:52:37] (ℹ️): Site URL : http://www.dikoyl.dev.cc
+[19/May/2020:06:52:37] (ℹ️): WordPress Version : 5.4.1
+[19/May/2020:06:52:37] (ℹ️): Onboarding Version : 1.0.0
+[19/May/2020:06:52:37] (ℹ️): Multisite : No
+[19/May/2020:06:52:37] (ℹ️): Server Info : Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.3.1 mod_perl/2.0.8-dev Perl/v5.16.3
+[19/May/2020:06:52:37] (ℹ️): PHP Version : 7.3.1
+[19/May/2020:06:52:37] (ℹ️): HTTPS : No
+[19/May/2020:06:52:37] (ℹ️): PHP Max Execution Time : 600
+[19/May/2020:06:52:37] (ℹ️): PHP Max Input Vars : 1000
+[19/May/2020:06:52:37] (ℹ️): Max Upload Size : 536870912
+[19/May/2020:06:52:37] (ℹ️): Plugins:
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] Starter Templates : v2.2.4 (Brainstorm Force)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] Contact Form 7 : v5.1.7 (Takayuki Miyoshi)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] Facebook for WooCommerce : v1.11.2 (Facebook)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] Hello Dolly : v1.7.2 (Matt Mullenweg)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] Jetpack by WordPress.com : v8.4.2 (Automattic)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] Mailchimp for WooCommerce : v2.4.0 (Mailchimp)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] Regenerate Thumbnails : v3.1.3 (Alex Mills (Viper007Bond))
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] Smart Image Resize for WooCommerce : v1.3.7 (Nabil Lemsieh)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] Ultimate Addons for Gutenberg : v1.14.10 (Brainstorm Force)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] WooCommerce Cart Abandonment Recovery : v1.2.5 (CartFlows Inc)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] WooCommerce PayPal Gateway : v3.0.0 (easypayment)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] USPS Simple Shipping for Woocommerce : v1.2.6 (SkyWorks85)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] WooCommerce Stripe Gateway : v4.3.3 (WooCommerce)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] WooCommerce Google Analytics Integration : v1.4.21 (WooCommerce)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] WooCommerce Services : v1.23.0 (Automattic)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] WooCommerce : v4.1.0 (Automattic)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] Yoast SEO : v14.0.4 (Team Yoast)
+[19/May/2020:06:52:37] (ℹ️): [PLUGIN] WPForms Lite : v1.6.0.1 (WPForms)

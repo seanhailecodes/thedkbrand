@@ -1,0 +1,133 @@
+.ppsir-slider-handle {
+    padding: 0px 5px;
+    width: auto !important;
+}
+
+.ppsir-regen-settings{
+    max-width: 450px;
+    display: block;
+    margin-top: 20px;
+}
+select + .ms-parent {
+    min-width: 500px !important;
+}
+select + .ms-parent .ms-drop{
+    width: auto !important;
+}
+
+.wpsir_watermark_image_preview:not(.hidden){
+    margin-top: 10px;
+    display: block;
+    border:1px solid rgb(189, 189, 189);
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.wpsir_watermark_image_preview img{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.wpsir_sidebar{
+background:#fff;
+padding:20px 10px;
+margin-top: 10px;
+border-radius:3px;
+text-align: center;
+}
+
+.wpsir_sidebar h3{
+    margin:0;
+}
+.wpsir_sidebar ul{
+    text-align: left;
+}
+.wp_sir_button{
+    padding:10px 15px;
+    border-radius: 3px;
+    color:#fff !important;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+}
+.wpsir_sidebar .dashicons{
+    color: rgb(228, 85, 125) ;
+}
+
+
+.wp_sir_upgrade_notice{
+    padding:10px;
+    border-radius:3px;
+    text-align: center;
+}
+.wp_sir_upgrade_notice .dashicons{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+
+.wp-sir-toggle-button{
+    width:35px;
+    height:20px;
+    display:inline-block;
+    border-radius:35px;
+    position:relative;
+  }
+  .wp-sir-toggle-button:not(.wp-sir-is-checked){
+      background: #b4b4b4;
+  }
+  .wp-sir-toggle-button.wp-sir-is-checked{
+    background:#667eea;
+
+  }
+  .wp-sir-toggle-button:after{
+    content:'';
+    width:17.5px;
+    top:2px;
+    bottom:2px;
+    background:#fff;
+    border-radius:15px;
+    position:absolute;
+  }
+  .wp-sir-toggle-button.wp-sir-is-checked:after{
+    right:2px;
+  }
+  .wp-sir-toggle-button.wp-sir-is-disabled{
+    opacity: .5;
+  }
+  .wp-sir-toggle-button:not(.wp-sir-is-checked):after{
+    left:2px;
+  }
+  
+  input[type="checkbox"].wp-sir-as-toggle{
+    display:none;
+  }
+
+.wp-sir-notice-info{
+    font-size:13px;
+    background-color:#ddd;
+    padding:2px 5px;
+    border-radius:3px;
+    display:inline-block;
+}
+
+.wp-sir-notice-info .dashicons{
+    color:#888;
+}
+.wp-sir-notice-danger{
+    font-size:13px;
+    background-color:#ddd;
+   padding:2px 5px; 
+   border-radius:3px;
+   display:inline-block;
+}
+
+.wp-sir-notice-danger .dashicons{
+    color:#ca4a1f;
+}

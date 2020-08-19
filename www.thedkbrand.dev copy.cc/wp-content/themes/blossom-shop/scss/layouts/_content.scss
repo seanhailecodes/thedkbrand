@@ -1,0 +1,142 @@
+#primary {
+	margin-bottom: 100px;
+	margin-top: 65px;
+}
+
+.fullwidth-centered {
+
+	.site-main {
+		max-width: 830px;
+		margin-left: auto;
+		margin-right: auto;
+	}//.site-main
+
+	&.single {
+
+		.post-shop-wrap, 
+		.author-section, 
+		.post-navigation, 
+		.comment-title, 
+		.comment-list, 
+		.comment-respond {
+			max-width: 830px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}//&.single
+}//.fullwidth-centered
+
+.rightsidebar #primary {
+	float: left;
+	width: calc(100% - 330px);
+	padding-right: 60px;
+}
+
+.leftsidebar #primary {
+	float: right;
+	width: calc(100% - 330px);
+	padding-left: 60px;
+}
+
+#secondary {
+	float: left;
+	width: 330px;
+	margin-bottom: 100px;
+	margin-top: 65px;
+
+	.widget:last-child {
+		margin-bottom: 0;
+	}//.widget
+}//#secondary
+
+.full-width.centered {
+
+	.site-main, 
+	.author-section, 
+	.post-navigation {
+		max-width: 890px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.comments-area {
+
+		.comments-title, 
+		.comment-respond, 
+		.comment-list {
+			max-width: 890px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}//.comments-area
+
+}//.full-width.centered
+
+.sticky-wdgt-enabled {
+	
+	&:not(.full-width) {
+
+		.site-content {
+
+			> .container {
+				display: flex;
+				flex: 1;
+				flex-wrap: wrap;
+			}//.container
+
+			.widget-area {
+
+				.widget:last-child {
+					position: sticky;
+					top: 50px;
+				}//.widget:last-child
+
+			}//.widget-area
+
+		}//.site-content
+
+	}//&:not(.full-width)
+
+}//.sticky-wdgt-enabled
+
+@include media(md) {
+	.rightsidebar #primary, 
+	.leftsidebar #primary {
+		width: calc(100% - 300px);
+	}
+
+	.rightsidebar #primary {
+		padding-right: 48px;
+	}
+
+	.leftsidebar #primary {
+		padding-left: 48px;
+	}
+
+	#secondary {
+		width: 300px;
+	}
+}//@include media(md)
+
+@include media(sm) {
+	.rightsidebar #primary, 
+	.leftsidebar #primary {
+		float: none;
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	#secondary {
+		float: none;
+		width: 100%;
+	}
+}//@include media(sm)
+
+@include media(xs) {
+	#secondary, 
+	#primary {
+		margin-bottom: 65px;
+	}
+}//@include media(xs)

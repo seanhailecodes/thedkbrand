@@ -1,0 +1,26 @@
+#crumbs{
+	padding: 10px 0;
+    font-size: 0.7778em;
+    color: #666;
+ }
+
+ #crumbs a{
+    color: #666;
+    margin-right: 10px;
+    -webkit-transition: ease 0.2s;
+    transition: ease 0.2s;
+ }
+
+ #crumbs a:hover {
+    text-decoration: none;
+    color: $secondary_color;
+ }
+
+ #crumbs .separator{
+    margin-right: 10px;
+}
+
+ #crumbs .current a {
+    color: $secondary_color;
+    pointer-events: none;
+ }

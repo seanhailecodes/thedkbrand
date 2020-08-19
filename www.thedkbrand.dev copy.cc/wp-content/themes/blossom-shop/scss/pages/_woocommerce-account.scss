@@ -1,0 +1,153 @@
+.woocommerce-account {
+
+	.woocommerce-MyAccount-navigation {
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			border: 1px solid rgba($black_color, 0.1);
+
+			li {
+				font-size: 0.7em;
+				text-transform: uppercase;
+				font-weight: 600;
+
+				a {
+					display: block;
+					padding: 15px 20px;
+					border-bottom: 1px solid rgba($black_color, 0.1);
+					color: $black_color;
+
+					&:hover {
+						background: $secondary_color;
+						color: $white_color;
+					}
+
+				}//a
+
+				&:last-child {
+
+					a {
+						border-bottom: none;
+					}//a
+
+				}//&:last-child
+
+				&.is-active {
+					
+					a {
+						background: $secondary_color;
+						color: $white_color;
+					}//a
+
+				}//&.is-active
+
+			}//li
+
+		}//ul
+
+	}//.woocommerce-MyAccount-navigation
+
+	.woocommerce-MyAccount-content {
+		font-size: 0.8em;
+
+		a {
+			color: $secondary_color;
+
+			&:hover {
+				text-decoration: underline;
+			}
+
+			&.woocommerce-Button {
+				color: $white_color;
+				text-decoration: none;
+			}
+
+		}//a
+
+		p {
+			margin-top: 0;
+		}//p
+
+		.dropcap {
+			float: none;
+			margin: 0;
+			font-size: inherit;
+			color: inherit;
+			line-height: inherit;
+			font-weight: inherit;
+		}//.dropcap
+
+		.woocommerce-message, .woocommerce-info {
+			font-size: 1em;
+		}
+
+		.title {
+
+			h3 {
+				margin-top: 0;
+				margin-bottom: 20px;
+				font-size: 1.2em;
+			}//h3
+
+		}//.title
+
+		form {
+			
+			.form-row {
+
+				input.input-text, textarea {
+					font-size: 1em;
+				}//input.input-text
+
+			}//.form-row
+
+			button.button {
+				font-size: 1em;
+				margin-top: 20px;
+			}//button.button
+
+		}//form
+
+	}//.woocommerce-MyAccount-content
+
+	.woocommerce-form-login {
+
+		.form-row {
+
+			label {
+				font-size: 0.7em;
+				font-weight: 600;
+				margin-bottom: 5px;
+			}//label
+
+		}//.form-row
+
+	}//.woocommerce-form-login
+
+	.lost_password {
+
+		a {
+			font-size: 0.8em;
+			color: $font_color;
+			font-style: italic;
+			text-decoration: underline;
+
+			&:hover {
+				color: $secondary_color;
+			}
+
+		}//a
+
+	}//.lost_password
+
+	.woocommerce-form-login {
+
+		.woocommerce-form-login__rememberme {
+			font-size: 0.8em;
+		}//.woocommerce-form-login__rememberme
+
+	}//.woocommerce-form-login
+
+}//.woocommerce-account
